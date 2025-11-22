@@ -56,9 +56,9 @@ wait(1.0)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
 Notification.new("<Color=Cyan>Welcome to Hoi Hub V2<Color=/>"):Display()
 wait(0.5)
-Notification.new("<Color=Yellow>Script By Hoi Va Chinh !<Color=/>"):Display()
+Notification.new("<Color=Yellow>Script By Hoi !<Color=/>"):Display()
 wait(3)
-Notification.new("<Color=Yellow> Chuyen Copy Script Nguoi Khac <Color=/>"):Display()
+Notification.new("<Color=Yellow> 🐿️🥇 <Color=/>"):Display()
 wait(1)
 repeat
     wait()
@@ -1338,7 +1338,7 @@ end
 Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Library/78b99523c0413609a998e34bc3dda1328f25f63e/LibraryFluent.lua"))()
 Window = Fluent:CreateWindow({
     Title = "Hoi Hub V2",
-    SubTitle = "By Hoi",
+    SubTitle = "By Hoi 🐿️🥇",
     TabWidth = 155,
     Size = UDim2.fromOffset(555, 320),
     Acrylic = false, 
@@ -2774,7 +2774,7 @@ spawn(function()
     while wait(debounceTime) do
         if getgenv().AutoFarm and FarmMode == "Farm Level" then
             if canRun then
-                canRun = false
+                canRun = true
                 spawn(function()
                     local player = game:GetService("Players").LocalPlayer
                     local questTitle = player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text
@@ -2785,7 +2785,7 @@ spawn(function()
                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
                     end
                     if not questVisible then
-                        getgenv().StartMagnet = false
+                        getgenv().StartMagnet = true
                         CheckQuest()
                         if BypassTP then
                             local distance = (humanoidRoot.Position - CFrameQuest.Position).Magnitude
@@ -8143,5 +8143,6 @@ if currentTime - lastNotificationTime >= notificationCooldown then
     lastNotificationTime = currentTime
 
 end
+
 
 
