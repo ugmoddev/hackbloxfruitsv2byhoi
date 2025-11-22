@@ -13,7 +13,7 @@ local notificationCooldown = 10
 local currentTime = tick()
 if currentTime - lastNotificationTime >= notificationCooldown then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Hoi Hub V2",
+        Title = "Hoi Hub V3",
         Text = "Loading",
         Duration = 5
     })
@@ -54,7 +54,7 @@ if Util then
 end
 wait(1.0)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
-Notification.new("<Color=Cyan>Welcome to Hoi Hub V2<Color=/>"):Display()
+Notification.new("<Color=Cyan>Welcome to Hoi Hub V3<Color=/>"):Display()
 wait(0.5)
 Notification.new("<Color=Yellow>Script By Hoi !<Color=/>"):Display()
 wait(3)
@@ -1337,7 +1337,7 @@ function AttackNoCoolDown()
 end
 Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Library/78b99523c0413609a998e34bc3dda1328f25f63e/LibraryFluent.lua"))()
 Window = Fluent:CreateWindow({
-    Title = "Hoi Hub V2",
+    Title = "Hoi Hub V3",
     SubTitle = "By Hoi 🐿️🥇",
     TabWidth = 155,
     Size = UDim2.fromOffset(555, 320),
@@ -1347,8 +1347,8 @@ Window = Fluent:CreateWindow({
 })
  Info = Window:AddTab({ Title = "Tab Info" , Icon = "" })
 Info:AddButton({
-        Title="Hoi Hub",
-        Description="Discord Chưa Cập Nhật",
+        Title="Discord",
+        Description="Chưa Cập Nhật",
         Callback=function()
             setclipboard(tostring("")) 
         end
@@ -7439,7 +7439,7 @@ task.spawn(function()
                             EquipWeapon("Tushita")
                         elseif not hasNotified then
                             game.StarterGui:SetCore("SendNotification", {
-                                Title = "Hoi Hub V2",
+                                Title = "Hoi Hub V3",
                                 Text = "Use! - Yama or Tushita",
                                 con = "rbxassetid://11995210995",
                                 Duration = 10,
@@ -8136,13 +8136,14 @@ local notificationCooldown = 10
 local currentTime = tick()
 if currentTime - lastNotificationTime >= notificationCooldown then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Hoi Hub V2",
+        Title = "Hoi Hub V3",
         Text = "Successfully",
         Duration = 1
     })
     lastNotificationTime = currentTime
 
 end
+
 
 
 
