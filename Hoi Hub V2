@@ -56,7 +56,9 @@ wait(1.0)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
 Notification.new("<Color=Cyan>Welcome to Hoi Hub V2<Color=/>"):Display()
 wait(0.5)
-Notification.new("<Color=Yellow>NIGGER !<Color=/>"):Display()
+Notification.new("<Color=Yellow>Script By Hoi !<Color=/>"):Display()
+wait(1)
+Notification.new("<Color=Yellow> Chuyen Copy Script Nguoi Khac !<Color=/>"):Display()
 wait(1)
 repeat
     wait()
@@ -8139,4 +8141,5 @@ if currentTime - lastNotificationTime >= notificationCooldown then
         Duration = 1
     })
     lastNotificationTime = currentTime
+
 end
