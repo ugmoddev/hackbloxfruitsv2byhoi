@@ -59,7 +59,6 @@ wait(0.5)
 Notification.new("<Color=Yellow>Script By Hoi !<Color=/>"):Display()
 wait(2)
 Notification.new("<Color=Yellow> 🐿️🥇 <Color=/>"):Display()
-wait(1)
 (getgenv()).Config = {
  ["FastAttack"] = true,
  ["ClickAttack"] = true
@@ -8185,6 +8184,7 @@ if currentTime - lastNotificationTime >= notificationCooldown then
     lastNotificationTime = currentTime
 
 end
+
 
 
 
