@@ -2785,7 +2785,7 @@ spawn(function()
                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
                     end
                     if not questVisible then
-                        getgenv().StartMagnet = true
+                        getgenv().StartMagnet = false
                         CheckQuest()
                         if BypassTP then
                             local distance = (humanoidRoot.Position - CFrameQuest.Position).Magnitude
@@ -8143,6 +8143,7 @@ if currentTime - lastNotificationTime >= notificationCooldown then
     lastNotificationTime = currentTime
 
 end
+
 
 
 
